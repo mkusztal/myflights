@@ -1,0 +1,87 @@
+[
+  {
+    "flight_id": "FL001",
+    "airline": "British Airways",
+    "departure": {
+      "city": "London",
+      "airport": "Heathrow Airport (LHR)",
+      "time": "2024-11-24T08:00:00"
+    },
+    "arrival": {
+      "city": "Paris",
+      "airport": "Charles de Gaulle Airport (CDG)",
+      "time": "2024-11-24T10:15:00"
+    },
+    "duration": "2h 15m",
+    "price": 120.0,
+    "class": ["Economy", "Business", "First"]
+  },
+  {
+    "flight_id": "FL002",
+    "airline": "Air France",
+    "departure": {
+      "city": "London",
+      "airport": "Gatwick Airport (LGW)",
+      "time": "2024-11-24T09:30:00"
+    },
+    "arrival": {
+      "city": "Paris",
+      "airport": "Charles de Gaulle Airport (CDG)",
+      "time": "2024-11-24T11:50:00"
+    },
+    "duration": "2h 20m",
+    "price": 135.0,
+    "class": ["Economy", "Business"]
+  },
+  {
+    "flight_id": "FL003",
+    "airline": "EasyJet",
+    "departure": {
+      "city": "London",
+      "airport": "Luton Airport (LTN)",
+      "time": "2024-11-24T12:00:00"
+    },
+    "arrival": {
+      "city": "Paris",
+      "airport": "Orly Airport (ORY)",
+      "time": "2024-11-24T14:05:00"
+    },
+    "duration": "2h 5m",
+    "price": 90.0,
+    "class": ["Economy"]
+  },
+  {
+    "flight_id": "FL004",
+    "airline": "Ryanair",
+    "departure": {
+      "city": "London",
+      "airport": "Stansted Airport (STN)",
+      "time": "2024-11-24T14:45:00"
+    },
+    "arrival": {
+      "city": "Paris",
+      "airport": "Beauvais Airport (BVA)",
+      "time": "2024-11-24T17:00:00"
+    },
+    "duration": "2h 15m",
+    "price": 75.0,
+    "class": ["Economy"]
+  },
+  {
+    "flight_id": "FL005",
+    "airline": "Vueling",
+    "departure": {
+      "city": "London",
+      "airport": "Heathrow Airport (LHR)",
+      "time": "2024-11-24T16:30:00"
+    },
+    "arrival": {
+      "city": "Paris",
+      "airport": "Charles de Gaulle Airport (CDG)",
+      "time": "2024-11-24T18:40:00"
+    },
+    "duration": "2h 10m",
+    "price": 110.0,
+    "class": ["Economy", "Premium Business"]
+  }
+]
