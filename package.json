@@ -58,11 +58,6 @@
     "@babel/preset-react": "^7.25.9",
     "@types/google.maps": "^3.58.1",
     "@types/lodash": "^4.17.13",
-    "babel-loader": "^9.2.1",
-    "eslint-config-standard": "^17.1.0",
-    "eslint-plugin-import": "^2.31.0",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-prettier": "^5.2.1",
-    "eslint-plugin-promise": "^7.2.0"
+    "babel-loader": "^9.2.1"
   }
 }
