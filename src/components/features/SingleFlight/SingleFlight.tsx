@@ -30,6 +30,8 @@ export const SingleFlight: React.FC<SingleFlightProps> = ({ flight }) => {
     });
   };
 
+  console.log("flight: ", flight);
+
   return (
     <Box
       sx={{
@@ -117,6 +119,10 @@ export const SingleFlight: React.FC<SingleFlightProps> = ({ flight }) => {
           <Typography sx={{ marginTop: 2 }}>
             Travel Class: {flight.class}
           </Typography>
+
+          {
+            // flight.
+          }
 
           <Typography sx={{ marginTop: 2 }}>
             Price per Person: {flight.price.toFixed(2)} €

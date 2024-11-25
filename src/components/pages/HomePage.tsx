@@ -15,6 +15,7 @@ import data from "../../utils/mock_data.json";
 
 export const HomePage: React.FC = () => {
   const [flights, setFlights] = useState<Flight[]>([]);
+  const [returnFlights, setReturnFlights] = useState<Flight[]>([]);
   const [loading, setLoading] = useState<boolean>(false);
   const [error, setError] = useState<string | null>(null);
   const flightsValidation = !loading && !error && flights.length > 0;
@@ -29,7 +30,7 @@ export const HomePage: React.FC = () => {
       infantsInSeat: number;
       infantsOnLap: number;
     };
-    tripType: string;
+    tripType: "One Way" | "Both Way";
   }) => {
     setLoading(true);
     setError(null);
@@ -86,6 +87,27 @@ export const HomePage: React.FC = () => {
         tripType: params.tripType,
       }));
 
+      if (params.tripType === "Both Way") {
+        const matchedReturnFlights: Flight[] = filteredData.flatMap(
+          (outboundFlight) =>
+            flightsData
+              .filter(
+                (flight) =>
+                  flight.departure.city === outboundFlight.arrival.city &&
+                  flight.arrival.city === outboundFlight.departure.city &&
+                  flight.class.includes(params.travelClass)
+              )
+              .map((returnFlight) => ({
+                ...returnFlight,
+                totalPrice: returnFlight.price * totalPeople,
+                totalPeople: totalPeople,
+                tripType: "Both Way",
+              }))
+        );
+
+        console.log("Matched Return Flights:", matchedReturnFlights);
+        setReturnFlights(matchedReturnFlights);
+      }
       setFlights(results);
     } catch (error) {
       console.error("Error fetching flights: ", error);
@@ -121,7 +143,9 @@ export const HomePage: React.FC = () => {
         }}
       />
 
-      {flightsValidation && <FlightResults flights={flights} />}
+      {flightsValidation && (
+        <FlightResults flights={flights} returnFlights={returnFlights} />
+      )}
 
       {loading && (
         <Box

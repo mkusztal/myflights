@@ -83,5 +83,107 @@
     "duration": "2h 10m",
     "price": 110.0,
     "class": ["Economy", "Premium Business"]
+  },
+  {
+    "flight_id": "FL101",
+    "airline": "British Airways",
+    "departure": {
+      "city": "Paris",
+      "airport": "Charles de Gaulle Airport (CDG)",
+      "time": "2024-11-24T12:00:00"
+    },
+    "arrival": {
+      "city": "London",
+      "airport": "Heathrow Airport (LHR)",
+      "time": "2024-11-24T14:15:00"
+    },
+    "duration": "2h 15m",
+    "price": 125.0,
+    "class": ["Economy", "Business", "First"]
+  },
+  {
+    "flight_id": "FL102",
+    "airline": "Air France",
+    "departure": {
+      "city": "Paris",
+      "airport": "Charles de Gaulle Airport (CDG)",
+      "time": "2024-11-24T13:00:00"
+    },
+    "arrival": {
+      "city": "London",
+      "airport": "Gatwick Airport (LGW)",
+      "time": "2024-11-24T15:20:00"
+    },
+    "duration": "2h 20m",
+    "price": 140.0,
+    "class": ["Economy", "Business"]
+  },
+  {
+    "flight_id": "FL103",
+    "airline": "EasyJet",
+    "departure": {
+      "city": "Paris",
+      "airport": "Orly Airport (ORY)",
+      "time": "2024-11-24T16:00:00"
+    },
+    "arrival": {
+      "city": "London",
+      "airport": "Luton Airport (LTN)",
+      "time": "2024-11-24T18:05:00"
+    },
+    "duration": "2h 5m",
+    "price": 85.0,
+    "class": ["Economy"]
+  },
+  {
+    "flight_id": "FL104",
+    "airline": "Ryanair",
+    "departure": {
+      "city": "Paris",
+      "airport": "Beauvais Airport (BVA)",
+      "time": "2024-11-24T18:30:00"
+    },
+    "arrival": {
+      "city": "London",
+      "airport": "Stansted Airport (STN)",
+      "time": "2024-11-24T20:45:00"
+    },
+    "duration": "2h 15m",
+    "price": 70.0,
+    "class": ["Economy"]
+  },
+  {
+    "flight_id": "FL106",
+    "airline": "Vueling",
+    "departure": {
+      "city": "Paris",
+      "airport": "Charles de Gaulle Airport (CDG)",
+      "time": "2024-11-24T20:00:00"
+    },
+    "arrival": {
+      "city": "London",
+      "airport": "Heathrow Airport (LHR)",
+      "time": "2024-11-24T22:10:00"
+    },
+    "duration": "2h 10m",
+    "price": 115.0,
+    "class": ["Economy", "Premium Business"]
+  },
+  {
+    "flight_id": "FL107",
+    "airline": "Vueling",
+    "departure": {
+      "city": "London",
+      "airport": "Charles de Gaulle Airport (CDG)",
+      "time": "2024-11-24T20:00:00"
+    },
+    "arrival": {
+      "city": "Paris",
+      "airport": "Heathrow Airport (LHR)",
+      "time": "2024-11-24T22:10:00"
+    },
+    "duration": "2h 10m",
+    "price": 115.0,
+    "class": ["Economy", "Premium Business"]
   }
 ]
